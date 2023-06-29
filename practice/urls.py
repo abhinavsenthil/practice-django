@@ -23,5 +23,6 @@ from django.http import HttpResponse
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("playground/", include('playground.urls'))
+    path("playground/", include('playground.urls')),
+    path("api/", include('playground.api.urls'))
 ]
